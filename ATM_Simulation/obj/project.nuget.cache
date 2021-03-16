@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZyrqDtA4zyYxwZS6QrT4OBE+a/bpq2KLbmHz9yQO+CYQUN9lzCsyg08BT+LncXnXTL66bOtl5Ruc+oTX8gO4kQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\delau\\source\\repos\\ATM_Simulation\\ATM_Simulation\\ATM_Simulation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\delau\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\delau\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

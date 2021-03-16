@@ -1,0 +1,47 @@
+﻿<Window x:Class="ATM_Simulation.CreateAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_Simulation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Create Account" Height="551" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    
+    <!-- Main border-->
+    <Border Margin="60,0,60,0">
+        <StackPanel>
+            <TextBlock Style="{DynamicResource MaterialDesignHeadline6TextBlock}" Margin="0,50,0,0">
+                Full name :
+            </TextBlock>
+            <TextBox Name="FullnameTxtbox" TextAlignment="Center" Style="{DynamicResource MaterialDesignTextBoxBase}" Margin="0,20,0,0" />
+
+            <TextBlock Style="{DynamicResource MaterialDesignHeadline6TextBlock}" Margin="0,50,0,0">
+                Card number :
+            </TextBlock>
+            <PasswordBox Name="CardNumberPassBox" MaxLength="16" HorizontalContentAlignment="Center" Style="{DynamicResource MaterialDesignPasswordBox}" Margin="0,20,0,0" />
+
+            <TextBlock Style="{DynamicResource MaterialDesignHeadline6TextBlock}" Margin="0,50,0,0">
+                Pin number :
+            </TextBlock>
+            <PasswordBox Name="PinNumberPassBox" HorizontalContentAlignment="Center" MaxLength="6" Style="{DynamicResource MaterialDesignPasswordBox}" Margin="0,20,0,0" />
+
+            <Grid Margin="0,15,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Name="SaveAccountBtn" Grid.Column="1" Margin="10,10,0,10"> Save account </Button>
+            </Grid>
+            <Button Name="BacktoLoginBtn" Click="BacktoLoginBtn_Click" HorizontalAlignment="Right" Foreground="{DynamicResource MaterialDesignLightForeground}" Background="{x:Null}" BorderBrush="{x:Null}" Margin="0,30,0,0">  Back to Login </Button>
+        </StackPanel>
+    </Border>
+</Window>
